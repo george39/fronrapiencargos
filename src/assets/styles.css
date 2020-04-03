@@ -1,7 +1,15 @@
-@charset "UTF-8";
 /*
 ESTILOS GENERALES PARA LOS BOTONES
 */
+.btn {
+  border-radius: 100px !important;
+}
+
+.form-control {
+  border-radius: 100px !important;
+  border: none !important;
+}
+
 /*****************************************************
 ESTILOS COLOR PRINCIPAL
 ******************************************************/
@@ -14,8 +22,14 @@ ESTILOS COLOR SECUNDARIO
 ******************************************************/
 .bg-secundario {
   background-color: #1E1E1E;
+  width: 20%;
 }
 
+@media (max-width: 785px) {
+  #lateral {
+    width: 100%;
+  }
+}
 /*****************************************************
 REDES SOCIALES
 ******************************************************/
@@ -51,63 +65,61 @@ REDES SOCIALES
 }
 
 /*****************************************************
+BARRA DE CONTACTO
+******************************************************/
+button, input {
+  overflow: none;
+}
+
+/*****************************************************
 BARRA LATERAL
 ******************************************************/
 #aside {
-  color: white;
-  background-color: #1E1E1E;
   height: 500px;
+  color: white;
+  float: left;
+  background-color: #1E1E1E;
   border: 1px solid #1E1E1E;
   box-shadow: 2px 0px 2px green;
   overflow: auto;
-}
-
-#aside::-webkit-scrollbar {
-  width: 8px;
-}
-
-#aside::-webkit-scrollbar-thumb {
-  background-color: green;
-  border-radius: 5px;
 }
 
 #aside ul li a {
   color: white;
 }
 
-#menu-lateral .navbar-toggler {
-  padding: 0;
-  font-size: 1rem;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-}
-
-#menu-lateral .navbar-toggler {
-  padding: 0;
-  font-size: 1rem;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
+#aside a {
+  color: white;
+  text-decoration: none;
 }
 
 /*****************************************************
-ESTOLOS PARA EL BOTON DEL MENU LATERAL
+BARRA DE SCROLL
 ******************************************************/
-#menu-lateral .boton-menu:before {
-  font-family: "Font Awesome 5 Free";
-  content: "";
-  font-weight: 900;
+.aside::-webkit-scrollbar {
+  width: 8px;
 }
 
-#aside .control:active {
-  display: none;
+.aside::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 5px;
 }
 
-.lateral {
-  display: block;
-  padding: 0;
-  margin: 0px;
+/*****************************************************
+FORMULARIO LOGIN
+******************************************************/
+#login {
+  width: 300px;
+  color: #d8d5d5;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: #1E1E1E;
+  box-shadow: 3px 3px 3px #1E1E1E;
+}
+
+.btn-login {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

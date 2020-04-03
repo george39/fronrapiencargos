@@ -13,7 +13,12 @@ $textobotones: white;
 ESTILOS GENERALES PARA LOS BOTONES
 */
 .btn {
+    border-radius: 100px !important;
+}
 
+.form-control {
+    border-radius: 100px !important;
+    border: none !important;
 }
 
 
@@ -31,7 +36,19 @@ ESTILOS COLOR SECUNDARIO
 ******************************************************/
 .bg-secundario {
     background-color: $secundario;
+    width: 20%;
 }
+
+@media (max-width: 785px) {
+    #lateral {
+
+        width: 100%;
+    }
+}
+
+
+
+
 
 /*****************************************************
 REDES SOCIALES
@@ -70,69 +87,84 @@ REDES SOCIALES
 }
 
 
+
+/*****************************************************
+BARRA DE CONTACTO
+******************************************************/
+
+
+button, input {
+    overflow: none;
+}
+
+
+
+
+
+
 /*****************************************************
 BARRA LATERAL
 ******************************************************/
 #aside {
-    //width: 200px;
-    color: white;
-    background-color: $secundario;
+    
     height: 500px;
+    color: white;
+    float: left;
+    background-color: $secundario;
     border: 1px solid #1E1E1E;
     box-shadow: 2px 0px 2px $principal;
     overflow: auto;
    
 }
 
-#aside::-webkit-scrollbar {
+#aside ul li a {
+    color: white;
+}
+
+#aside a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*****************************************************
+BARRA DE SCROLL
+******************************************************/
+.aside::-webkit-scrollbar {
     width: 8px;
       
     
 }
 
-#aside::-webkit-scrollbar-thumb { 
+.aside::-webkit-scrollbar-thumb { 
     background-color: green;
     border-radius: 5px;
 }
 
-#aside ul li a {
-    color: white;
-}
 
-#menu-lateral .navbar-toggler {
-    padding: 0;
-    font-size: 1rem;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-}
 
-#menu-lateral .navbar-toggler {
-    padding: 0;
-    font-size: 1rem;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-}
 
 /*****************************************************
-ESTOLOS PARA EL BOTON DEL MENU LATERAL
+FORMULARIO LOGIN
 ******************************************************/
-#menu-lateral .boton-menu:before {
-    font-family: 'Font Awesome 5 Free';
-    content: "\f078";
-    font-weight: 900;
+#login {
+    width: 300px;
+    color: rgb(216, 213, 213);
+    margin-top: 100px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: $secundario;
+    box-shadow: 3px 3px 3px $secundario;
 }
 
-#aside .control:active {
-    display: none;
+.btn-login {
+    margin-top: 50px;
 }
 
-.lateral {
-    display: block;
-    padding: 0;
-    margin: 0px;
-}
+
 
 
 
