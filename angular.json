@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "tienda": {
@@ -22,7 +22,6 @@
             "assets": [
               "src/favicon.png",
               "src/assets"
-              
             ],
             "styles": [
               "src/styles.css",
@@ -125,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tienda"
+    }
+  },
+  "defaultProject": "tienda",
+  "cli": {
+    "analytics": "e3bfb67a-28c7-41f5-8a72-b980009306ee"
+  }
 }
